@@ -18,7 +18,7 @@
     "client:build": "cd client && npm run build",
     "server:build": "cd server && npm run build",
     "render-start": "concurrently \"npm run server:start\" \"wait-on tcp:3001 && npm run client:start\"",
-    "server:start": "cd server && npm run start",
+    "server:start": "cd server && npm run seed && npm run start",
     "client:start": "cd client && npm run start"
   },
   "keywords": [],
